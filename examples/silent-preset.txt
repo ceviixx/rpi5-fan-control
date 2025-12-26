@@ -1,0 +1,21 @@
+# Silent Preset Configuration
+# Very quiet operation for light workloads
+# Best for: Light workloads, media centers, minimal cooling needs
+
+[all]
+# Fan Control Configuration - SILENT PRESET
+dtparam=fan_temp0=55000          # 55°C
+dtparam=fan_temp0_hyst=5000      # 5°C hysteresis
+dtparam=fan_temp0_speed=50       # ~20% speed
+
+dtparam=fan_temp1=65000          # 65°C
+dtparam=fan_temp1_hyst=5000
+dtparam=fan_temp1_speed=75       # ~30% speed
+
+dtparam=fan_temp2=75000          # 75°C
+dtparam=fan_temp2_hyst=5000
+dtparam=fan_temp2_speed=125      # ~50% speed
+
+dtparam=fan_temp3=85000          # 85°C
+dtparam=fan_temp3_hyst=5000
+dtparam=fan_temp3_speed=200      # ~80% speed

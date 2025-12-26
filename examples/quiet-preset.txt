@@ -1,0 +1,21 @@
+# Quiet Preset Configuration
+# Minimal noise, moderate cooling
+# Best for: Office environments, noise-sensitive situations
+
+[all]
+# Fan Control Configuration - QUIET PRESET
+dtparam=fan_temp0=50000          # 50°C
+dtparam=fan_temp0_hyst=5000      # 5°C hysteresis
+dtparam=fan_temp0_speed=50       # ~20% speed
+
+dtparam=fan_temp1=60000          # 60°C
+dtparam=fan_temp1_hyst=5000
+dtparam=fan_temp1_speed=75       # ~30% speed
+
+dtparam=fan_temp2=70000          # 70°C
+dtparam=fan_temp2_hyst=5000
+dtparam=fan_temp2_speed=125      # ~50% speed
+
+dtparam=fan_temp3=80000          # 80°C
+dtparam=fan_temp3_hyst=5000
+dtparam=fan_temp3_speed=200      # ~80% speed

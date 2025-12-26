@@ -1,0 +1,31 @@
+# Custom Example Configuration
+# This is a template for creating your own custom fan curve
+# Modify the temperature and speed values to suit your needs
+
+[all]
+# Fan Control Configuration - CUSTOM
+# Temperature values in millidegrees Celsius (e.g., 40000 = 40°C)
+# Speed values: 0-255 PWM scale (divide by 2.5 for approximate %)
+# Hysteresis: prevents rapid fan speed changes (e.g., 5000 = 5°C)
+
+dtparam=fan_temp0=40000          # First threshold (adjust as needed)
+dtparam=fan_temp0_hyst=5000      # Hysteresis for stability
+dtparam=fan_temp0_speed=75       # Fan speed at first threshold
+
+dtparam=fan_temp1=55000          # Second threshold
+dtparam=fan_temp1_hyst=5000
+dtparam=fan_temp1_speed=125
+
+dtparam=fan_temp2=67500          # Third threshold
+dtparam=fan_temp2_hyst=5000
+dtparam=fan_temp2_speed=175
+
+dtparam=fan_temp3=75000          # Fourth threshold
+dtparam=fan_temp3_hyst=5000
+dtparam=fan_temp3_speed=250
+
+# Tips:
+# - Keep temperatures in ascending order
+# - Fan speeds should also be in ascending order
+# - Recommended hysteresis: 2000-5000 (2-5°C)
+# - Common speed values: 50 (~20%), 75 (~30%), 125 (~50%), 175 (~70%), 200 (~80%), 255 (~100%)

@@ -1,0 +1,108 @@
+name: Bug Report
+description: Report a bug or issue with the Raspberry Pi 5 Fan Control tool
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the information below.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Tell us what went wrong...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this issue?
+      placeholder: |
+        1. Run 'sudo rpi5-fan-config'
+        2. Select option '...'
+        3. Click on '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: The fan configuration should...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: Instead, the tool...
+    validations:
+      required: true
+
+  - type: input
+    id: rpi-model
+    attributes:
+      label: Raspberry Pi Model
+      description: What Raspberry Pi model are you using?
+      placeholder: "Raspberry Pi 5 Model B Rev 1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: os-version
+    attributes:
+      label: Operating System Version
+      description: What OS and version are you running?
+      placeholder: "Raspberry Pi OS (64-bit) Bookworm"
+    validations:
+      required: true
+
+  - type: input
+    id: tool-version
+    attributes:
+      label: Tool Version
+      description: What version of rpi5-fan-config are you using?
+      placeholder: "v1.1.0"
+    validations:
+      required: false
+
+  - type: textarea
+    id: config
+    attributes:
+      label: Current Fan Configuration
+      description: If relevant, paste your current fan configuration from /boot/firmware/config.txt
+      placeholder: |
+        dtparam=fan_temp0=40000
+        dtparam=fan_temp0_speed=75
+        ...
+      render: bash
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Messages or Logs
+      description: Any error messages, log output, or screenshots
+      placeholder: Paste any relevant error messages here...
+      render: bash
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information that might be helpful
+      placeholder: Add any other context about the problem here...
+    validations:
+      required: false

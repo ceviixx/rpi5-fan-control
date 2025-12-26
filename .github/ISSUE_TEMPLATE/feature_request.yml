@@ -1,0 +1,109 @@
+name: Feature Request
+description: Suggest a new feature or enhancement for the Raspberry Pi 5 Fan Control tool
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Please provide as much detail as possible.
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of the feature you'd like to see
+      placeholder: I would like to have...
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Explain the problem this feature would solve or the scenario where it would be useful
+      placeholder: |
+        This feature would be useful when...
+        Currently, I have to...
+        With this feature, I could...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: How do you envision this feature working?
+      placeholder: |
+        The feature could work by...
+        It would appear in the menu as...
+        The user would...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any alternative solutions or workarounds?
+      placeholder: |
+        I've also thought about...
+        Currently I'm working around this by...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would improve my workflow
+        - High - Critical for my use case
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: compatibility
+    attributes:
+      label: Backward Compatibility
+      description: Have you considered backward compatibility?
+      options:
+        - label: This feature should work with existing configurations
+        - label: This feature might require configuration changes
+        - label: I haven't considered compatibility yet
+
+  - type: textarea
+    id: mockup
+    attributes:
+      label: Mockup or Example
+      description: If applicable, provide a mockup, screenshot, or example of how this feature might look
+      placeholder: |
+        Menu option example:
+        7. New Feature - Description here
+        
+        Or paste a screenshot/mockup
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information, references, or examples that might be helpful
+      placeholder: |
+        Similar tools that have this feature...
+        Related issues or discussions...
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Are you willing to help implement this feature?
+      options:
+        - label: I would like to implement this feature myself
+        - label: I can help test this feature
+        - label: I can provide feedback during development

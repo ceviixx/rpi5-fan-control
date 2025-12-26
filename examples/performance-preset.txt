@@ -1,0 +1,21 @@
+# Performance Preset Configuration
+# Maximum cooling with more noise
+# Best for: Heavy workloads, overclocking, maximum cooling
+
+[all]
+# Fan Control Configuration - PERFORMANCE PRESET
+dtparam=fan_temp0=30000          # 30°C
+dtparam=fan_temp0_hyst=5000      # 5°C hysteresis
+dtparam=fan_temp0_speed=125      # ~50% speed
+
+dtparam=fan_temp1=50000          # 50°C
+dtparam=fan_temp1_hyst=5000
+dtparam=fan_temp1_speed=175      # ~70% speed
+
+dtparam=fan_temp2=65000          # 65°C
+dtparam=fan_temp2_hyst=5000
+dtparam=fan_temp2_speed=225      # ~90% speed
+
+dtparam=fan_temp3=70000          # 70°C
+dtparam=fan_temp3_hyst=5000
+dtparam=fan_temp3_speed=255      # ~100% speed

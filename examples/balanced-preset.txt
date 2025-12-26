@@ -1,0 +1,21 @@
+# Balanced Preset Configuration (RECOMMENDED)
+# Good balance of cooling and noise
+# Best for: General use, everyday computing
+
+[all]
+# Fan Control Configuration - BALANCED PRESET
+dtparam=fan_temp0=40000          # 40°C
+dtparam=fan_temp0_hyst=5000      # 5°C hysteresis
+dtparam=fan_temp0_speed=75       # ~30% speed
+
+dtparam=fan_temp1=55000          # 55°C
+dtparam=fan_temp1_hyst=5000
+dtparam=fan_temp1_speed=125      # ~50% speed
+
+dtparam=fan_temp2=67500          # 67.5°C
+dtparam=fan_temp2_hyst=5000
+dtparam=fan_temp2_speed=175      # ~70% speed
+
+dtparam=fan_temp3=75000          # 75°C
+dtparam=fan_temp3_hyst=5000
+dtparam=fan_temp3_speed=250      # ~100% speed

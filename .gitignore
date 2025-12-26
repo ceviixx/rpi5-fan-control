@@ -1,0 +1,8 @@
+.DS_Store
+*.backup
+*.bak
+*~
+.vscode/
+.idea/
+*.swp
+*.swo
